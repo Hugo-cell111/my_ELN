@@ -6,4 +6,4 @@ This repository contains the UNOFFICIAL implementation of :
 
 and is a modified version of parallel computation.
 
-If you need to use multiple GPUs, please modify the parameters in train.sh
+If you need to use multiple GPUs, please modify the parameters in eln_train.sh
