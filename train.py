@@ -268,7 +268,7 @@ class TrainManager(object):
             self.train_both(epoch, both_dataloader, iter_per_epoch) 
             self.validate(epoch, self.val_loader) 
 
-            if epoch >= self.warm_up_epoch:
+            if epoch >= self.warm_up_epoch and args.local_rank == 0:
                 self.save_ckpt(epoch)
         end = time.time()
                
